@@ -55,7 +55,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Models\User.cs" />
+    <Compile Include="Tools\BaseViewModel.cs" />
+    <Compile Include="Tools\ILoaderOwner.cs" />
+    <Compile Include="Tools\Managers\LoaderManager.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Tools\RelayCommand.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -96,8 +102,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ViewModels\" />
-    <Folder Include="Views\" />
+    <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

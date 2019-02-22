@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Radzievska_Homework1.ViewModels;
 
 namespace Radzievska_Homework1
 {
@@ -23,6 +24,7 @@ namespace Radzievska_Homework1
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainViewModel();
         }
     }
 }
