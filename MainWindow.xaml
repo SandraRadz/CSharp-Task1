@@ -3,27 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
         xmlns:local="clr-namespace:Radzievska_Homework1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="797.724">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="107.333" />
-            <RowDefinition Height="125.333" />
-            <RowDefinition Height="73*"  />
-            <RowDefinition Height="115*"  />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="413.333"/>
-            <ColumnDefinition Width="2.099"/>
-        </Grid.ColumnDefinitions>
-        <Label Grid.Row="0" Grid.Column="0" FontSize="21" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Choose day of your birthday! " Height="50" Margin="0,47,273.333,10.333" Width="422" Grid.ColumnSpan="2"/>
-        <DatePicker Name="BirthDate" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="50" Margin="96,13.667,326.333,61.667" Grid.ColumnSpan="2" />
-        <Button Grid.Row="1" Grid.Column="1"  Content="GO" FontSize="21" Margin="90,13.667,213.333,61.667" />
-        <Label Grid.Row="2" FontSize="21" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Your zodiac" Height="50" Margin="0,13.333,59,10" Width="223"/>
-        <Label Grid.Row="2" Grid.Column="1" FontSize="21" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Your China zodiac" Height="50" Margin="0,10.333,195.333,13" Width="216"/>
-        <TextBox Grid.Row="3" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="52" Margin="96,10,59,52.667" />
-        <TextBox Grid.Row="3" Grid.Column="1"   HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="52" Margin="2,10,213.333,52.667" />
-    </Grid>
+    <Grid IsEnabled="{Binding IsControlEnabled, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}">
+        </Grid>
 </Window>

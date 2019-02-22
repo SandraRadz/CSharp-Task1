@@ -15,7 +15,6 @@ namespace Radzievska_Homework1.ViewModels
         private string _massage;
         private string _western;
         private string _chinese;
-        private RelayCommand<object> _goCommand;
 
 
         public MainViewModel()
@@ -24,7 +23,7 @@ namespace Radzievska_Homework1.ViewModels
         }
 
         #region Commands
-        private RelayCommand<object> countCommand;
+        private RelayCommand<object> goCommand;
 
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged([CallerMemberName]string prop = "")
@@ -77,15 +76,16 @@ namespace Radzievska_Homework1.ViewModels
         }
         #endregion
 
-        public RelayCommand<object> CountCommand
+        public RelayCommand<object> GoCommand
         {
             get
             {
-                return countCommand ??
-                  (countCommand = new RelayCommand<object>(async obj =>
+                return goCommand ??
+                  (goCommand = new RelayCommand<object>(async obj =>
                   {
                       Age = "";
                       Western = "";
+                      Message = "";
                       Chinese = "";
 
                       LoaderManager.Instance.ShowLoader();

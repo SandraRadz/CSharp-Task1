@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Radzievska_Homework1.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,20 +13,18 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Radzievska_Homework1.ViewModel;
-using Radzievska_Homework1.ViewModels;
 
-namespace Radzievska_Homework1
+namespace Radzievska_Homework1.View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MyPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MyPage : Page
     {
-        public MainWindow()
+        public MyPage()
         {
             InitializeComponent();
-            DataContext = new MainWindowViewModel();
+            DataContext = new MainViewModel();
         }
     }
 }
