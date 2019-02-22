@@ -1,0 +1,15 @@
+C:\Users\oleks\source\repos\Radzievska_Homework1\Radzievska_Homework1\bin\Debug\Radzievska_Homework1.exe.config
+C:\Users\oleks\source\repos\Radzievska_Homework1\Radzievska_Homework1\bin\Debug\Radzievska_Homework1.exe
+C:\Users\oleks\source\repos\Radzievska_Homework1\Radzievska_Homework1\bin\Debug\Radzievska_Homework1.pdb
+C:\Users\oleks\source\repos\Radzievska_Homework1\Radzievska_Homework1\obj\Debug\Radzievska_Homework1.csprojAssemblyReference.cache
+C:\Users\oleks\source\repos\Radzievska_Homework1\Radzievska_Homework1\obj\Debug\MainWindow.g.cs
+C:\Users\oleks\source\repos\Radzievska_Homework1\Radzievska_Homework1\obj\Debug\App.g.cs
+C:\Users\oleks\source\repos\Radzievska_Homework1\Radzievska_Homework1\obj\Debug\Radzievska_Homework1_MarkupCompile.cache
+C:\Users\oleks\source\repos\Radzievska_Homework1\Radzievska_Homework1\obj\Debug\Radzievska_Homework1_MarkupCompile.lref
+C:\Users\oleks\source\repos\Radzievska_Homework1\Radzievska_Homework1\obj\Debug\MainWindow.baml
+C:\Users\oleks\source\repos\Radzievska_Homework1\Radzievska_Homework1\obj\Debug\Radzievska_Homework1.g.resources
+C:\Users\oleks\source\repos\Radzievska_Homework1\Radzievska_Homework1\obj\Debug\Radzievska_Homework1.Properties.Resources.resources
+C:\Users\oleks\source\repos\Radzievska_Homework1\Radzievska_Homework1\obj\Debug\Radzievska_Homework1.csproj.GenerateResource.cache
+C:\Users\oleks\source\repos\Radzievska_Homework1\Radzievska_Homework1\obj\Debug\Radzievska_Homework1.csproj.CoreCompileInputs.cache
+C:\Users\oleks\source\repos\Radzievska_Homework1\Radzievska_Homework1\obj\Debug\Radzievska_Homework1.exe
+C:\Users\oleks\source\repos\Radzievska_Homework1\Radzievska_Homework1\obj\Debug\Radzievska_Homework1.pdb
