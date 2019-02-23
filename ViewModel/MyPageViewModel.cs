@@ -1,9 +1,7 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Threading;
-using System.Runtime.CompilerServices;
 using Radzievska_Homework1.Tools;
 
 namespace Radzievska_Homework1.ViewModels
@@ -96,9 +94,13 @@ namespace Radzievska_Homework1.ViewModels
 
 
                       int inputAge = countAge();
-                      if (inputAge <= 0 || inputAge >= 135)
+                      if (inputAge <= 0)
                       {
-                          MessageBox.Show("It's seems that your input uncorrect data");
+                          MessageBox.Show("You can't be so young");
+                      }
+                      else if (inputAge >= 135)
+                      {
+                          MessageBox.Show("You can't be so old");
                       }
                       else
                       {
