@@ -4,10 +4,11 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Threading;
 using System.Runtime.CompilerServices;
+using Radzievska_Homework1.Tools;
 
 namespace Radzievska_Homework1.ViewModels
 {
-    internal class MainViewModel : INotifyPropertyChanged
+    internal class MyPageViewModel : BaseViewModel
     {
         private User user;
         private DateTime _dateOfBirth;
@@ -17,7 +18,7 @@ namespace Radzievska_Homework1.ViewModels
         private string _chinese;
 
 
-        public MainViewModel()
+        public MyPageViewModel()
         {
             user = new User();
         }

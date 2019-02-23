@@ -61,7 +61,7 @@
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Tools\RelayCommand.cs" />
-    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\MyPageViewModel.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Compile Include="View\MyPage.xaml.cs">
       <DependentUpon>MyPage.xaml</DependentUpon>

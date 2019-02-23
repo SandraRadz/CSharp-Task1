@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:fa="http://schemas.fontawesome.io/icons/"
         xmlns:local="clr-namespace:Radzievska_Homework1"
+        xmlns:count="clr-namespace:Radzievska_Homework1.View"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="797.724">
     <Grid IsEnabled="{Binding IsControlEnabled, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}">
-        </Grid>
+        <count:MyPage></count:MyPage>
+        
+    </Grid>
 </Window>
