@@ -10,29 +10,28 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="107.333" />
-            <RowDefinition Height="126" />
+            <RowDefinition Height="115" />
             <RowDefinition Height="73*"  />
-            <RowDefinition Height="115*"  />
+            <RowDefinition Height="72*"  />
+            <RowDefinition Height="83*"  />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition Width="413.333"/>
+            <ColumnDefinition Width="240.667"/>
+            <ColumnDefinition Width="279.109"/>
             <ColumnDefinition Width="2.099"/>
         </Grid.ColumnDefinitions>
-        <Label Grid.Row="0" Grid.Column="0" FontSize="21" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Choose day of your birthday! " Height="50" Margin="0,47,273.333,10.333" Width="422" Grid.ColumnSpan="2"/>
-        <DatePicker Name="BirthDate" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="50" Margin="96,13.667,326.333,62.333" Grid.ColumnSpan="2" SelectedDate="{Binding DateOfBirth}" />
-        <Button Grid.Row="1" Grid.Column="1"  Content="GO" FontSize="21" Margin="90,13.667,213.333,61.333" Command="{Binding GoCommand}" />
-        <Label Grid.Row="2" FontSize="21" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Your age" Height="50" Margin="0,15.667,161.667,18.333" Width="127"/>
-        <Label Grid.Row="2" FontSize="21" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Your zodiac" Height="50" Margin="0,15.667,9.667,18.333" Width="134"/>
-        <Label Grid.Row="2" Grid.Column="1" FontSize="21" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Your China zodiac" Height="50" Margin="0,15.667,213,18.333" Width="179"/>
-        <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="15" Margin="145,39,5.333,53.333" Text="{Binding Age, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-        <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Height="35" Margin="0,36,3.333,36.333" Text="{Binding Greeting, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="0"/>
-        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="35" Margin="5,36,5.333,36.333" Text="{Binding Zodiak, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="35" Margin="5,36,5.333,36.333" Text="{Binding ChineseZodiak, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Grid.Row="0" Grid.Column="0" FontSize="21" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Choose day of your birthday! " Height="50" Margin="0,47,273,10.333" Width="422" Grid.ColumnSpan="3"/>
+        <DatePicker Name="BirthDate" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="50" Margin="96,7.667,46.667,57" Grid.ColumnSpan="2" SelectedDate="{Binding DateOfBirth}" />
+        <Button Grid.Row="1" Grid.Column="2"  Content="GO" FontSize="21" Margin="21.333,9.667,148,65" Command="{Binding GoCommand}" />
+        <Label Grid.Row="2" FontSize="21" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Your age" Height="50" Margin="0,7,48,16.333" Width="127"/>
+        <Label Grid.Row="2" FontSize="21" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Your zodiac" Height="50" Margin="0,7,63.667,16.333" Width="134" Grid.Column="1"/>
+        <Label Grid.Row="2" Grid.Column="2" FontSize="21" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Your China zodiac" Height="50" Margin="0,7,90,16.333" Width="179"/>
 
-        <TextBox Grid.Row="2" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="52" Margin="109,83.667,193.667,81"  Text="{Binding Age, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.RowSpan="2"/>
-        <TextBox Grid.Row="3"   HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="52" Margin="109,80.667,213,0" Text="{Binding Massege, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2"/>
-        <TextBox Grid.Row="2" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="52" Margin="227,83.667,23.667,81" Text="{Binding Western, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.RowSpan="2"/>
-        <TextBox Grid.Row="2"   HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="52" Margin="21.333,83.667,213,81" Text="{Binding Chinese, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.RowSpan="2"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="66"  Text="{Binding Age, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="86,5.667,10,0.333"/>
+        <TextBlock Grid.Row="3"  Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="56"  Text="{Binding Western, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Grid.Row="3" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="56" Text="{Binding Chinese, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="21.333,10.667,37,5.333" />
+        <TextBlock Grid.Row="4" Grid.Column="0"  HorizontalAlignment="Right" VerticalAlignment="Center" Height="73"  Text="{Binding Message, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="240" Margin="0,4.667,0,5"/>
     </Grid>
 </UserControl>

@@ -6,9 +6,6 @@ namespace Radzievska_Homework1
     internal class User
     {
         private DateTime _dateOfBirth;
-        private string _age;
-        private string _western;
-        private string _chinese;
 
         public DateTime DateOfBirth
         {

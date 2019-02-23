@@ -97,7 +97,7 @@ namespace Radzievska_Homework1.ViewModels
                           if (DateOfBirth.Day == DateTime.Today.Day)
                               Message = "Happy Birthday!";
 
-                          Age =  ""+countAge();
+                          Age =  ""+ inputAge;
                           Western = discoverZodiac();
                           Chinese =  countChineeseZodiak();
                       }
