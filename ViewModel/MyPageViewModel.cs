@@ -26,19 +26,12 @@ namespace Radzievska_Homework1.ViewModels
         #region Commands
         private RelayCommand<object> goCommand;
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void OnPropertyChanged([CallerMemberName]string prop = "")
-        {
-            if (PropertyChanged != null)
-                PropertyChanged(this, new PropertyChangedEventArgs(prop));
-        }
-
 
         #region Properties
         public DateTime DateOfBirth
         {
             get { return _dateOfBirth; }
-            private set
+            set
             {
                 _dateOfBirth = value;
             }
@@ -104,9 +97,9 @@ namespace Radzievska_Homework1.ViewModels
                           if (DateOfBirth.Day == DateTime.Today.Day)
                               Message = "Happy Birthday!";
 
-                          Age = "Your age: \n" + countAge();
-                          Western = "Your zodiak is " + discoverZodiac();
-                          Chinese = "Your Chineese zodiak is " + countChineeseZodiak();
+                          Age =  ""+countAge();
+                          Western = discoverZodiac();
+                          Chinese =  countChineeseZodiak();
                       }
 
                   }));
@@ -122,7 +115,7 @@ namespace Radzievska_Homework1.ViewModels
             var today = DateTime.Today;
             var age = today.Year - DateOfBirth.Year;
             if (DateOfBirth > today.AddYears(-age)) age--;
-
+            Console.WriteLine(age);
             return age;
         }
 

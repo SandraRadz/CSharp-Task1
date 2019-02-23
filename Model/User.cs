@@ -13,7 +13,7 @@ namespace Radzievska_Homework1
         public DateTime DateOfBirth
         {
             get { return _dateOfBirth; }
-            private set {
+            set {
                 _dateOfBirth = value;
             }
         }

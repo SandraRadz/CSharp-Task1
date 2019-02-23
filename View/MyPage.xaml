@@ -20,7 +20,7 @@
             <ColumnDefinition Width="2.099"/>
         </Grid.ColumnDefinitions>
         <Label Grid.Row="0" Grid.Column="0" FontSize="21" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Choose day of your birthday! " Height="50" Margin="0,47,273.333,10.333" Width="422" Grid.ColumnSpan="2"/>
-        <DatePicker Name="BirthDate" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="50" Margin="96,13.667,326.333,62.333" Grid.ColumnSpan="2" SelectedDate="{Binding DateOfBirth, Mode=OneWay}" />
+        <DatePicker Name="BirthDate" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="50" Margin="96,13.667,326.333,62.333" Grid.ColumnSpan="2" SelectedDate="{Binding DateOfBirth}" />
         <Button Grid.Row="1" Grid.Column="1"  Content="GO" FontSize="21" Margin="90,13.667,213.333,61.333" Command="{Binding GoCommand}" />
         <Label Grid.Row="2" FontSize="21" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Your age" Height="50" Margin="0,15.667,161.667,18.333" Width="127"/>
         <Label Grid.Row="2" FontSize="21" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Your zodiac" Height="50" Margin="0,15.667,9.667,18.333" Width="134"/>
