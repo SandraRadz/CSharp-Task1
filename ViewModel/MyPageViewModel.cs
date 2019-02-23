@@ -60,13 +60,21 @@ namespace Radzievska_Homework1.ViewModels
         public string Western
         {
             get { return _western; }
-            set { _western = value; }
+            set
+            {
+                _western = value;
+                OnPropertyChanged();
+            }
         }
 
         public string Chinese
         {
             get { return _chinese; }
-            set { _chinese = value; }
+            set
+            {
+                _chinese = value;
+                OnPropertyChanged();
+            }
         }
         #endregion
 

@@ -29,9 +29,9 @@
         <Label Grid.Row="2" Grid.Column="2" FontSize="21" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Your China zodiac" Height="50" Margin="0,7,90,16.333" Width="179"/>
 
 
-        <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="66"  Text="{Binding Age, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="86,5.667,10,0.333"/>
-        <TextBlock Grid.Row="3"  Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="56"  Text="{Binding Western, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-        <TextBlock Grid.Row="3" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="56" Text="{Binding Chinese, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="21.333,10.667,37,5.333" />
+        <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="56"  Text="{Binding Age, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="81,5.667,10,10.333"/>
+        <TextBlock Grid.Row="3"  Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Height="56"  Text="{Binding Western, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="0,5.667,9.667,10.333" Width="221"/>
+        <TextBlock Grid.Row="3" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="56" Text="{Binding Chinese, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="21.333,0,37,10.333" />
         <TextBlock Grid.Row="4" Grid.Column="0"  HorizontalAlignment="Right" VerticalAlignment="Center" Height="73"  Text="{Binding Message, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="240" Margin="0,4.667,0,5"/>
     </Grid>
 </UserControl>
